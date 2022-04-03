@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # travel_plus
 
 A new Flutter project.
@@ -15,3 +16,6 @@ For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 # Travel_Trip_Planner_UI
+=======
+# travel_trip_planner_ui
+>>>>>>> 0be33c89c673c23f09265d60a1383e46d9fe17a5
