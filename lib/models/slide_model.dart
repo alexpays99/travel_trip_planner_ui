@@ -8,15 +8,15 @@ class SlideModel {
     ),
     Slide(
       imageUrl: 'lib/assets/images/undraw_Environmental_study_re_q4q8.png',
-      title: 'Design Interactive',
+      title: 'Quick interactive',
       description:
-          'Lorem ipsum ',
+          'Save favourite places',
     ),
     Slide(
       imageUrl: 'lib/assets/images/undraw_A_day_at_the_park_re_9kxj.png',
-      title: 'It\'s Just',
+      title: 'Convenient planing',
       description:
-          'Lorem ipsum',
+          'Plan in advance',
     ),
   ];
 }

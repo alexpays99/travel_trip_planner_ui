@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:travel_plus/models/shedule_model.dart';
 import 'package:travel_plus/styles/styles.dart';
-import 'package:travel_plus/pages/home_page/bottom_navigation_bar.dart' as bottomNavigationBar;
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -14,7 +13,7 @@ class HomePage extends StatelessWidget {
       backgroundColor: const Color.fromRGBO(255, 255, 255, 1),
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.only(left: 20, right: 20, top: 25),
+          padding: const EdgeInsets.only(left: 30, right: 30, top: 35),
           child: Column(
             children: [
               Row(
@@ -95,7 +94,7 @@ class HomePage extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                      padding: const EdgeInsets.only(left: 210, top: 120),
+                      padding: const EdgeInsets.only(left: 260, top: 120),
                       child: Container(
                         width: 80,
                         height: 40,
@@ -132,53 +131,12 @@ class HomePage extends StatelessWidget {
                   scrollDirection: Axis.vertical,
                   itemCount: shedule.shedules.length,
                   itemBuilder: (context, index) {
-                    
-                    return Container(
-                      padding: const EdgeInsets.only(bottom: 40),
-                      child: Row(
-                        children: [
-                          const Text('10:30', style: listTitleTextStyle),
-                          const SizedBox(
-                            width: 20,
-                          ),
-                          Container(
-                            width: 30,
-                            height: 30,
-                            decoration: BoxDecoration(
-                              border: Border.all(
-                                color: Colors.redAccent,
-                                width: 1,
-                              ),
-                              borderRadius: BorderRadius.circular(5),
-                              image: DecorationImage(
-                                image: AssetImage(shedule.shedules[index].locationPath),
-                              ),
-                            ),
-                          ),
-                          const SizedBox(
-                            width: 20,
-                          ),
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(shedule.shedules[index].title, style: listTitleTextStyle),
-                              Text(shedule.shedules[index].subtitle, style: listSubtitleTextStyle),
-                            ],
-                          ),
-                          Expanded(child: Container()),
-                          Image(
-                            image: shedule.shedules[index].icon,
-                          ),
-                        ],
-                      ),
-                    );
+                    return shedule.returnShedules(context, index)!;
                   })
             ],
           ),
         ),
       ),
-      bottomNavigationBar: const bottomNavigationBar.BottomNavigationBar(),
     );
   }
 }
-

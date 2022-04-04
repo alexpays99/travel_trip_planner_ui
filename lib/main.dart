@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:travel_plus/pages/get_started_page/get_started_page.dart';
+import 'package:travel_plus/widgets/bottom_navigation_bar.dart';
 import 'package:travel_plus/pages/home_page/home_page.dart';
 import 'package:travel_plus/styles/styles.dart';
 
@@ -19,6 +20,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/getstarted': (context) => GetStartedPage(),
         '/home': (context) => const HomePage(),
+        '/bottomNavigationBar': (context) => BottomNavigationBarWidget(),
       }
     );
   }

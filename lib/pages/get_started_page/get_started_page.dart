@@ -51,13 +51,12 @@ class _GetStartedPageState extends State<GetStartedPage> {
       child: Scaffold(
           backgroundColor: Colors.white,
           body: Padding(
-            padding: const EdgeInsets.only(left: 20, right: 20),
+            padding: const EdgeInsets.only(left: 30, right: 30),
             child: Column(
               children: [
                 const Spacer(
                   flex: 1,
                 ),
-                //const SizedBox(height: 90,),
                 SizedBox(
                   height: 420,
                   child: Stack(
@@ -114,7 +113,7 @@ class _GetStartedPageState extends State<GetStartedPage> {
                             minimumSize: const Size(100, 40),
                           ),
                           onPressed: () {
-                            Navigator.pushReplacementNamed(context, '/home');
+                            Navigator.pushReplacementNamed(context, '/bottomNavigationBar');
                           },
                           child: const Text('Get started',
                               style: buttonTextStyle)),

@@ -45,4 +45,5 @@ const listSubtitleTextStyle = TextStyle(
 const buttonTextStyle = TextStyle(
   fontFamily: 'Montserrat',
   fontWeight: FontWeight.bold,
+  fontSize: 16
 );
